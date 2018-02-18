@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    /* The image used */
+    background-image: url("pexels-photo-374074.jpeg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.phrase {
+    font-weight: bold;
+    text-shadow: 0 0 3px grey;
+    font-size: 30px;
+    color: black;
+
+    /* center text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* remove user selection */
+    user-select: none;
+}
+
+.portal {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* increase size */
+    transition: all 0.5s;
+}
+
+.portal:hover {
+    transform: scale(1.2) translate(-50%, -50%);;
+}
